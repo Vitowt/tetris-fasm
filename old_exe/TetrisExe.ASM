@@ -256,7 +256,7 @@ Game.Update:
 
         ; inc counts of figure
         inc     [Game.FigsPlaced]
-        ; encount new speed
+        ; count new speed
         test    [Game.FigsPlaced], 0000'0000'0000'1111; 111
         jnz     @F
         fild    [Game.TickSpeed]
